@@ -1,0 +1,19 @@
+#screenMAin
+<ScreenMain>
+	BoxLayout:
+		size_hint:(1,None)
+		height:30
+		Button:
+			id:main_server_btn_id
+			text:"Server"
+			on_press:
+				root.manager.transition.direction='left'
+				root.manager.transition.duration=1
+				root.manager.current='screen_server'
+		Button:	
+			id:main_client_btn_id
+			text:"Client"
+			on_press:
+				root.manager.transition.direction='right'
+				root.manager.transition.duration=1
+				root.manager.current='screen_client'

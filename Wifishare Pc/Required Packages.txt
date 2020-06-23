@@ -1,0 +1,15 @@
+Packages to run this Python App
+
+
+kivy framework for interface for python program
+socket for connections
+tkinter for dialog in interface
+time
+threading
+multiprocess
+subprocess
+binascii
+
+
+
+

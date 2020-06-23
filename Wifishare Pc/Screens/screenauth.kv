@@ -1,0 +1,27 @@
+#screenAuth
+<ScreenAuth>
+	BoxLayout:
+		orientation:'vertical'
+		BoxLayout:
+			size_hint:(1,None)
+			height:40
+			Label:
+				text:"Wifi Name"
+			Label:
+				id:auth_name_id
+				text:"WIFI_NAME"
+		BoxLayout:
+			size_hint:(1,None)
+			height:40
+			Label:
+				text:"Password"
+			TextInput:	
+				id:auth_password_id
+				multiline:False
+		Button:
+			text:"Connect"
+			on_press:
+				root.manager.transition.direction='down'
+				root.manager.transition.duration=1
+				root.manager.current=root.manager.previous()
+				root.onConnectPressed()

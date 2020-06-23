@@ -1,0 +1,53 @@
+#screenServer
+<ScreenServer>
+	BoxLayout:
+		orientation:'vertical'
+		BoxLayout:
+			Button:
+				text:"Wifi"
+				on_press:root.onWifiPressed()
+			Button:
+				text:"Create"
+				on_press:root.onCreatePressed()
+		Button:
+			text:"Receive"
+			on_press:
+				
+				root.onReceivePressed()
+		BoxLayout:
+			Button:
+				text:"Choose"
+				on_press:root.onChoosePressed()
+			Button:
+				text:"Send"
+				on_press:root.onSendPressed()
+		Button:
+			text:"Close"
+			on_press:root.onClosePressed()
+		BoxLayout:
+			Label:
+				text:"Connection Status"
+			Label:
+				id:server_status_id
+				text:"Disconnected"
+		BoxLayout:
+			Label:
+				text:"Sending"
+			Label:
+				id:server_sending_id
+				text:"Disallowed"
+		BoxLayout:
+			Label:
+				text:"Receiving"
+			Label:
+				id:server_receiving_id
+				text:"Disconnected"
+		BoxLayout:
+			orientation:'vertical'
+			id:server_wifi_conn_id
+		Button:
+			text:"Back"
+			on_press:
+				root.manager.transition.direction='up'
+				root.manager.transition.duration=1
+				root.manager.current='screen_main'

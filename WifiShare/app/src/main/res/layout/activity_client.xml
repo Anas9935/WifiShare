@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        >
+        <Button
+            android:id="@+id/client_hotspot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hotspot"
+            />
+        <Button
+            android:id="@+id/client_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Search For Server"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/client_closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/client_recv_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recieve File"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/client_selectFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose File"
+            />
+        <Button
+            android:id="@+id/client_sendfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="64dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connection Status:"
+            android:layout_marginStart="16sp"
+            />
+        <TextView
+            android:id="@+id/client_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISCONNECTED"
+            android:textStyle="bold"
+            android:layout_marginStart="16sp"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data_exchange"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiving:"
+            android:layout_marginStart="16sp"
+            />
+        <TextView
+            android:id="@+id/client_data_excng_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISALLOWED"
+            android:textStyle="bold"
+            android:layout_marginStart="16sp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending:"
+            android:layout_marginStart="16sp"
+            />
+        <TextView
+            android:id="@+id/client_data_excng_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISALLOWED"
+            android:textStyle="bold"
+            android:layout_marginStart="16sp"
+            />
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/client_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>
