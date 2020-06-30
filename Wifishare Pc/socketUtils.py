@@ -7,8 +7,8 @@ import multiprocess as mp
 
 from constants import *
 from wifiUtils import *
-from send import *
-from receive import *
+#from send import *
+#from receive import *
 
 #from interface import scan_wifi
 
